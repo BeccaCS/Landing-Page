@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dogs</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        color: #233142;
+        font-weight: 600;
+      }
+      h2 {
+        color: #233142;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: underline;
+      }
+
+      img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 40px;
+        border: 1px solid #f95959;
+      }
+      hr {
+        border: 1px solid #f95959;
+      }
+      body {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+      }
+
+      li {
+        line-height: 1.5;
+      }
+      span {
+        color: #455d7a;
+      }
+      a {
+        color: #233142;
+        
+        margin-left: 20px;
+        padding:5px;
+        text-align: left;
+      }
+      button {
+        background-color: #233142;
+        color: #f95959;
+        padding: 15px;
+        display:block;
+        margin: 0 auto;
+        font-size: 25px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 8px 4px 4px #233142;
+        transition: 150ms all ease-in-out;
+      }
+      button:hover {
+        color:#233142;
+        background-color: #f95959;
+        cursor: pointer;
+        box-shadow: 8px 4px 4px #f95959;
+      }
+      .name {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>All about Dogs</h1>
+      <img src="cute-dog.jpg" alt="dog" />
+      <br/>
+      <hr />
+    </div>
+    <div class="dog-facts">
+      <h2>5 Facts about dogs.</h2>
+      <ul>
+        <li>A dog's nose print is unique, much like a person's fingerprint.</li>
+        <li>
+          Speaking of sleeping … all dogs dream, but puppies and senior dogs
+          dream more frequently than adult dogs.
+        </li>
+        <li>
+          A dog's sense of smell is legendary, but did you know that their nose
+          has as many as 300 million receptors? In comparison, a human nose has
+          about 5 million.
+        </li>
+        <li>
+          Dogs' noses can sense heat and thermal radiation, which explains why
+          blind or deaf dogs can still hunt.
+        </li>
+        <li>
+          Dogs curl up in a ball when sleeping to protect their organs — a
+          holdover from their days in the wild, when they were vulnerable to
+          predator attacks.
+        </li>
+      </ul>
+      </div><br/>
+      <a href="https://www.akc.org/expert-advice/lifestyle/dog-facts/">
+        <strong><span>Learn more</span> interesting facts about dogs.</strong>
+      </a>
+    </div>
+    <br/>
+    <div class="benefits">
+      <ul>
+        <li>
+          <em>Dogs Make Us Feel Less Alone</em>
+          <p>
+            Dogs can be there for you even when people can’t. They offer
+            unconditional love, emotional support, and constant cuddles that
+            help stave off social isolation. A small Australian study discovered
+            that dog ownership can reduce loneliness.
+          </p>
+        </li>
+        <li>
+          <em>Dogs Are Good for Your Heart</em>
+          <p>
+            Owning a dog can help you live longer. A comprehensive review of
+            studies published between 1950 and 2019 found that dog owners had a
+            lower risk of death. Studies suggest that dog owners have lower
+            blood pressure levels and improved responses to stress. Research has
+            concluded that the bond between humans and dogs reduces stress,
+            which is a major cause of cardiovascular problems.
+          </p>
+        </li>
+      </ul>
+      <br/>
+      <a
+        href="https://www.akc.org/expert-advice/lifestyle/10-science-based-benefits-dog/"
+        ><strong
+          ><span>Learn more</span> about the benefits of having a dog</strong
+        >.
+      </a>
+    </div>
+    <br/>
+    <br />
+    <button>Name your dog</button>
+    <br />
+    <p class="name">Coded by Rebecca Seepaul</p>
+    <script>
+        function nameYourDog() {
+            let name = prompt ("Do you want to name your virtual dog?");
+        
+      if (name === "yes")  {
+      let dogName = prompt ("What do you want to name your dog?");
+         alert ("Your virtual dog's name is " + dogName); }
+      else if (name == "no") {
+        alert ("😟");
+      }
+        }
+        
+ let button = document.querySelector("button");
+ button.addEventListener("click", nameYourDog);
+    </script>
+  </body>
+</html>
